@@ -67,7 +67,7 @@ stages:
   jobs:
   - deployment: DeploymentJob
     pool: myAgentPool
-    environment: $(environmentName)
+    environment: 'prodenv'
     strategy:
       runOnce:
         deploy:
