@@ -8,16 +8,13 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: 'udacityCdServiceConnection'
+  azureServiceConnectionId: '8b21e6d5-73d1-4bb1-a173-925956c9be3c'
 
   # Web app name
   webAppName: 'rujin-housing-prediction'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
-
-  # Environment name
-  environmentName: 'myvenv'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
@@ -60,7 +57,7 @@ stages:
   jobs:
   - deployment: DeploymentJob
     pool: myAgentPool
-    environment: $(environmentName)
+    environment: myvenv
     strategy:
       runOnce:
         deploy:
