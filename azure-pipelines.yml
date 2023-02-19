@@ -41,8 +41,8 @@ stages:
       displayName: 'myStep 2'
     - script: |
         export PATH=$HOME/.local/bin:$PATH
-        make install
-        make lint
+        make -i install
+        make -i lint
       workingDirectory: $(projectRoot)
       displayName:  'myStep 3 - Run lint tests'
     - task: ArchiveFiles@2
