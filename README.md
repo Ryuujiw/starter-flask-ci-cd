@@ -60,3 +60,4 @@ and execute the make_prediction.sh on a separate terminal. Ensure that the port 
 We could consider to containerize our Flask web app in the event of having more microservices in the future
 
 ## Demo 
+https://youtu.be/sv6VVPJ2PuU
