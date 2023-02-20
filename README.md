@@ -1,49 +1,62 @@
 # Overview
 
-<TODO: complete this with an overview of your project>
+An API to predict housing price
+
+Sample payload:
+```
+POST
+
+{
+   "CHAS":{
+      "0":0
+   },
+   "RM":{
+      "0":6.575
+   },
+   "TAX":{
+      "0":296.0
+   },
+   "PTRATIO":{
+      "0":15.3
+   },
+   "B":{
+      "0":396.9
+   },
+   "LSTAT":{
+      "0":4.98
+   }
+}
+```
 
 ## Project Plan
-<TODO: Project Plan
-
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+Link to trello: https://trello.com/invite/b/OnwSbPTf/ATTI935f9a454b2833fe180d5eeadb146403FBE2DB89/udacity
+Link to spreadsheet: https://docs.google.com/spreadsheets/d/1_rhcfjAOl7dXIherlrdMl8I6kfwdVTwJ1VVk62JUHbc/edit?usp=sharing
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+![image](https://user-images.githubusercontent.com/32730247/220159120-86ea9242-9186-4d0b-906a-2c6aaad57e6f.png)
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
-* Project running on Azure App Service
+* The project is running on azure app service
+* ![image](https://user-images.githubusercontent.com/32730247/220159471-1e85231b-fbe5-4337-b327-b939df9e1b5a.png)
 
-* Project cloned into Azure Cloud Shell
+To debug locally, launch the app.py
+```python3 app.py```
+and execute the make_prediction.sh on a separate terminal. Ensure that the port number is correct.
+```./make_prediction.sh```
 
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
-
-* Output of a test run
-
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+* Successful deploy of the project in Azure Pipelines.
+![image](https://user-images.githubusercontent.com/32730247/220160077-662a9c76-0cb2-43ec-bc1e-272756bc5da1.png)
 
 * Running Azure App Service from Azure Pipelines automatic deployment
+![image](https://user-images.githubusercontent.com/32730247/220160157-b8bad8b4-e89b-485f-a478-12845c188edf.png)
 
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
-
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
-
-* Output of streamed log files from deployed application
-
-> 
+* Successful prediction from deployed flask app
+![image](https://user-images.githubusercontent.com/32730247/220160216-12983024-3c34-49db-b469-8339d6e8d8a0.png)
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+We could consider to containerize our Flask web app in the event of having more microservices in the future
 
 ## Demo 
-
-<TODO: Add link Screencast on YouTube>
