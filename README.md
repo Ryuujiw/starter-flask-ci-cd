@@ -1,7 +1,9 @@
 # Overview
 
-[![Build Status](https://dev.azure.com/rujinwong/rujinwong/_apis/build/status/Ryuujiw.starter-flask-ci-cd?branchName=main)](https://dev.azure.com/rujinwong/rujinwong/_build/latest?definitionId=2&branchName=main)
+Link to project for - CI: Set Up Azure Cloud Shell
+https://github.com/Ryuujiw/udacity-ci-cd-project
 
+CD project: 
 An API to predict housing price
 
 Sample payload:
