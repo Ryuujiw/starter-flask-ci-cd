@@ -1,6 +1,6 @@
 # Overview
 
-Test
+[![Build Status](https://dev.azure.com/rujinwong/rujinwong/_apis/build/status/Ryuujiw.starter-flask-ci-cd?branchName=main)](https://dev.azure.com/rujinwong/rujinwong/_build/latest?definitionId=2&branchName=main)
 
 An API to predict housing price
 
